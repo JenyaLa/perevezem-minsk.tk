@@ -1,0 +1,249 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+/* ---Header--- */
+li {
+    list-style: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: f6f6f6;
+    padding: 22px 0;
+}
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.main-menu {
+    list-style: none;
+    margin-top: 20px;
+    background: white;
+  }
+  .main-menu li {display: inline-block;}
+  .main-menu li:after {
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+  }
+  .main-menu li:last-child:after {content: none;}
+  .main-menu a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+  }
+  .main-menu a, .main-menu a:visited {color: #9d999d;}
+  .main-menu a.current, .main-menu a:hover{color: #feb386;}
+  .main-menu a:before,
+  .main-menu a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+  }
+  .main-menu a:hover:before, .main-menu .current:before {left: 0;}
+  .main-menu a:hover:after, .main-menu .current:after {right: 0;}   
+   #menu-checkbox {
+    display: none;
+}
+
+nav{
+    margin-top: 20px;
+}
+.number{
+    align-self: center;
+    font-size: 20px;
+    font-weight:bold;
+}
+/* ----End Header----- */
+
+/* ---Section top slide----- */
+.top-slide {
+    background: url(img/minsk.jpeg) no-repeat;
+    padding-top: 120px;
+    padding-bottom: 150px
+}
+.top-container {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+}
+.top-slide h1 {
+    background: yellow;
+    display: inline;
+    font-size: 70px;
+    padding: 0 13px;
+}
+.top-slide p {
+    background: #414146;
+    display: inline;
+    font-size: 24px;
+    color: white;
+    padding: 0 4px;
+} 
+/* ---Section top slide END----- */
+
+/*---- Section specialice---- */
+.specialize-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.specialize-container h2 {
+    font-size: 35px;
+    background: #424147;
+    color: yellow;
+    display: inline-block;
+}
+.specialize-container p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+.first-p {
+    font-size: 20px;
+    color: white;
+}
+.bottom-card {
+    background: #414146;
+    position: relative;
+    top: -30px;
+}
+.specialize-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    opacity: 1;
+}  
+.card:hover {
+     opacity: 0.6;
+}
+/*---- Section specialice  END---- */
+
+/*---- Section price---- */
+.price {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px
+}
+.price h4 {
+    background: #424147;
+    padding: 0 8px;
+    font-size: 35px;
+    display: inline-block;
+    color: yellow;
+    margin-bottom: 30px;
+}
+.price p {
+    color: #424147;
+    font-size: 16px;
+}
+.price-table {
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto;
+}
+table {
+    /* width: 1300px; */
+    font-size: 16px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td:first-child {
+    background: #AFCDE7;
+    color: white;
+    padding: 10px 20px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+    td {
+    background: #D8E6F3;
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }
+/*---- Section price END---- */
+
+/*---- Footer---- */
+footer {
+    background: #414146;
+    padding: 30px 0;
+    color: #000;
+}
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.footer-container .contacts h3{
+    padding-bottom: 20px;
+}
+.footer-container .contacts img{
+    padding-right: 20px;
+}
+.footer-container .contacts a{
+    color: #000;
+}
+/*----Footer END---- */
+
+/* ---Template---- */
+#template {
+    width: 85%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.left {
+    padding: 40px 0;
+}
+.right h2 {
+    background: #424147;
+    font-size: 30px;
+    color: yellow;
+    display: inline-block;
+}
+
+.right p {
+    color: #424147;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.template-text {
+    text-align: justify;
+}
+.template-price {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+/* ---Template END---- */
+

@@ -1,0 +1,13 @@
+@media (max-width: 550px) {
+    .main-menu {padding-top: 0;}
+    .main-menu li {display: block;}
+    .main-menu li:after {content: none;}
+    .main-menu a {
+      padding: 25px 0 20px; 
+      margin: 0 30px;
+    }
+    .specialize-cards {
+        justify-content: center;
+        grid-template-columns: auto !important;
+    }
+}

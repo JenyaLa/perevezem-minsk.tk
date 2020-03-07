@@ -1,0 +1,21 @@
+@media screen and ( max-width: 1020px) {
+    .header-container a {
+        font-size: 16px;
+        margin-right: 5px
+    }
+    /* .main-menu a {
+        margin: 0 10px;
+        padding: 0;
+    }
+    .top-slide h2 {
+        font-size: 35px;
+    }
+    .specialize-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .bottom-card {
+        width: 250px;
+        margin: 0 auto;
+    } */
+}

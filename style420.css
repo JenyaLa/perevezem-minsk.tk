@@ -1,0 +1,65 @@
+@media screen and ( max-width: 420px) {
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    .main-menu a {
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #000;
+    }
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
+       display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+       content: attr(data-close);
+    }
+    .header-container a {
+        margin-right: -65 px;
+    }
+    .top-slide {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .top-slide h1 {
+        font-size: 25px !important;
+    }
+    .top-slide p {
+        font-size: 16px;
+    }
+    .specialize-container p {
+        font-size: 16px;
+    }
+    .specialize-container h2 {
+    font-size: 25px;
+    }
+    .price-table {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer-container {
+        width: 100%;
+        font-size: 12px;    
+    }
+}
